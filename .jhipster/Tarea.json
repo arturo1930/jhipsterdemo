@@ -1,0 +1,36 @@
+{
+  "applications": "*",
+  "changelogDate": "20230130225002",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "tarea",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "actividades",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaCreacion",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Tarea",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "historiaUsuario",
+      "otherEntityRelationshipName": "tarea",
+      "relationshipName": "historiaUsuario",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

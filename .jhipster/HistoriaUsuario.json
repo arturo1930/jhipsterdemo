@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20230130225001",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "historia_usuario",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "criteriosAceptacion",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "HistoriaUsuario",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "tarea",
+      "otherEntityRelationshipName": "historiaUsuario",
+      "relationshipName": "tarea",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
